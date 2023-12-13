@@ -4,15 +4,15 @@ This is a modified script ([thanks, Chris!](https://github.com/ChrisSn0w/plex-mu
 
 The use-case for this is to backup or prepare a USB drive, SD card, or whatever else as a portable version of your Plex-stored music library for use in a car, etc.
 
-## Installation
+## How to use
 
-1. Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Prepare a `.env` file with the following variables:
+### Prepare a `.env` file with the following variables:
 
 ```bash
 cp .env.example .env
@@ -25,13 +25,13 @@ cp .env.example .env
 - `POST_PROCESS` - optionally, run a post-processing script after downloading. See below for more info. The format is `<script>`, where the value matches a file `/post_process/{script}.sh`.
 - `METADATA_PROCESS` - optionally, specify a path to a metadata script to use for post-processing. See below for more info. The format is `<script>`, where the value matches a file `/metadata_process/{script}.sh`.
 
-3. Running the script
+### Running the script
 
 ```bash
 python dl_plex_playlist.py
 ```
 
-4. Post-processing and metadata
+### Post-processing and metadata
 
 The script has the ability to run two types of post-download scripts:
 
