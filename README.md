@@ -40,6 +40,11 @@ The script has the ability to run two types of post-download scripts:
 
 Post-processing and metadata scripts are defined in the respective folders in the repo. You can use the example scripts as a starting point. Note that I've written these scripts for my own use-case, so feel free to modify them as needed.
 
+I've provided two scripts that you can use or modify as needed:
+
+1. [`lossy_ffmpeg`](https://github.com/kristianfreeman/plex-music-playlist-downloader/blob/main/post_process/lossy_ffmpeg.sh) -- a *post-processing* script that encodes FLAC and WAV files into 320kbps MP3s. It will delete the lossless files locally after encoding.
+2. [`filebot`](https://github.com/kristianfreeman/plex-music-playlist-downloader/blob/main/metadata_process/filebot.sh) -- a *metadata* script that uses [Filebot](https://www.filebot.net/) to rename and tag files. A Filebot license is required to use this script.
+
 ---
 
 original README:
